@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 
 exports.run = async (client, message, args) => {
-    if(!message.member.roles.some(r=>["Admin", "BotAdmin", "Manager", "Council"].includes(r.name)) )
     return message.reply("Sorry, you don't have permissions to use this!");
   
   let member = message.mentions.members.first();
@@ -17,3 +16,17 @@ exports.run = async (client, message, args) => {
     .catch(error => message.reply(`Sorry ${message.author} I couldn't ban because of : ${error}`));
   message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
 }
+
+  exports.conf = {
+    enabled: true,
+    guildOnly: true,
+    aliases: [],
+    permLevel: "Bot Moderator"
+  };
+  
+  exports.help = {
+    name: "ban",
+    category: "Moderation",
+    description: "Bans specified user.",
+    usage: "ban [...user]"
+  };

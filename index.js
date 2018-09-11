@@ -55,8 +55,23 @@ client.on("message", message => {
     if (message.author.bot) return;
     message.channel.send("F")
   }
+  else if (message.content == "Alexa play despacito"){
+    if (message.author.bot) return;
+    message.channel.send("Playing Despacito")
+  }
+  else if (message.content == "This is so sad"){
+    if (message.author.bot) return;
+    message.channel.send("Alexa, play despacito")
+  }
+  else if(message.content == "stfu bot"){
+    if (message.author.bot) return;
+    message.channel.send("No")
+  }
+  else if(message.content == "No"){
+    if (message.author.bot) 
+    message.channel.send("https://media.discordapp.net/attachments/480633000854552580/485482870144761867/unknown.png")
+  }
 });
-
 
 /* client.on("message", async message => {
   if(message.author.bot) return;

@@ -8,7 +8,7 @@ module.exports.run = async (client, message, arges) => {
 
     let catembed = new Discord.RichEmbed()
     .setColor("#f48c42")
-    .setTitle("Cat")
+    .setTitle(":cat: Meow")
     .setImage(body.file);
 
     message.channel.send(catembed);

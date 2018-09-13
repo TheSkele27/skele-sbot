@@ -5,6 +5,7 @@
     "discord.js": "^11.4.2",
     "fortnite": "^4.0.1",
     "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2",
     "ms": "^2.1.1",
     "superagent": "^3.8.3"
   }

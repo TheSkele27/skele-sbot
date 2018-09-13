@@ -34,3 +34,10 @@ rolesList;
     .setFooter("©TheSkele27 2018.")
     msg.edit(embed)
   };
+
+module.exports.help = {
+    name: "whois",
+    category: "Misc",
+    description: "Provides user information.",
+    usage: "whois"
+  };

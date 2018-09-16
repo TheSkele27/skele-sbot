@@ -22,12 +22,12 @@ exports.run = async (client, message, args) => {
     try {
       embed.setAuthor(botuser.displayName, game.assets.smallImageURL);
     } catch (err) {
-      embed.setAuthor(botuser.displayName, "https://cdn.discordapp.com/avatars/460639060851949569/4f545d7d0ee4fb31a411035793c4aef8.png?size=2048");
+      embed.setAuthor(botuser.displayName, "https://cdn.discordapp.com/avatars/481440207963422720/98cb767468bb363194f9e541b8f651cd.png?size=256");
     }
     try {
       embed.setThumbnail(game.assets.largeImageURL);
     } catch (err) {
-      embed.setThumbnail("https://cdn.discordapp.com/avatars/460639060851949569/4f545d7d0ee4fb31a411035793c4aef8.png?size=2048");
+      embed.setThumbnail("https://cdn.discordapp.com/avatars/481440207963422720/98cb767468bb363194f9e541b8f651cd.png?size=256");
     }
     try {
       embed.addField("Status", `${status[botuser.user.presence.status]}`, true);

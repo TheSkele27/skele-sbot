@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 
+
 exports.run = async (client, message, args) => {
 
     function checkDays(date) {
@@ -33,7 +34,7 @@ exports.run = async (client, message, args) => {
         .addField("ID", message.guild.id, true)
         .addField("Owner", `${message.guild.owner.user.username}#${message.guild.owner.user.discriminator}`, true)
         .addField("Region", region[message.guild.region], true)
-        .addField("Total | Humans | Bots", `${message.guild.members.size} | ${message.guild.members.filter(member => !member.user.bot).size} | ${message.guild.members.filter(member => member.user.bot).size}`, true)
+        .addField("Total | Humans | Bots", `${message.guild.memberCount} | ${message.guild.members.filter(member => !member.user.bot).size} | ${message.guild.members.filter(member => member.user.bot).size}`, true)
         .addField("Verification Level", verifLevels[message.guild.verificationLevel], true)
         .addField("Channels", message.guild.channels.size, true)
         .addField("Roles", message.guild.roles.size, true)

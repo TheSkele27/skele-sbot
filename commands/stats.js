@@ -16,7 +16,7 @@ exports.run = (client, message, args, level) => { // eslint-disable-line no-unus
     .addField("• Channels", `${client.channels.size.toLocaleString()}`, true)
     .addField("• Discord.js Version", `v${version}`, true)
     .addField("• Node Version", `${process.version}`, true)
-    .addField("Creator", `TheSkele27`, true)
+    .addField("• Creator", `TheSkele27#1337`, true)
     .setFooter(`${client.user.username} | TheSkele27`);
   message.channel.send(embed);
 };

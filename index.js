@@ -3,7 +3,6 @@ const client = new Discord.Client({
   fetchAllMembers: true})
 //const client = new Discord.Client();
 const fs = require("fs");
-const api = require("./data/apikeys.json")
 const config = require("./config.json");
 client.config = config
 

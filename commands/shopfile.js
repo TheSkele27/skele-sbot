@@ -6,7 +6,7 @@ rule.hour = 20;
 rule.minute = 3;
 
 module.exports.run = async (client, message, arges) => {
-    const channelpng = bot.channels.get('377856206414544896');
+    const channelpng = client.channels.get('377856206414544896');
     	console.log("Start File")
     	console.log('start sending file function')
         var j = schedule.scheduleJob(rule, function(){

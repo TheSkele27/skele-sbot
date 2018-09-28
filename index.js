@@ -98,7 +98,4 @@ client.on("message", message => {
 
   }
 }); */
-
-//NDgxNDQwMjA3OTYzNDIyNzIw.Dl2Yhg._cb1jHlpUY2h62ZFppIru-NBmOs'
-
 client.login(config.token);

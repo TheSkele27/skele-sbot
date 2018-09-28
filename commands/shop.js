@@ -12,16 +12,16 @@ async function createShop() {
           "x-api-key":"api.fnbr"
         }
       }),
-      jimp.read("./Images/shopBack.jpg"),
-      jimp.read("./Images/Rarities/uncommon.png"),
-      jimp.read("./Images/Rarities/rare.png"),
-      jimp.read("./Images/Rarities/epic.png"),
-      jimp.read("./Images/Rarities/legendary.png"),
-      jimp.read("./Images/backdrop.png"),
-      jimp.loadFont("./Fonts/open-sans-32-white.fnt"),
-      jimp.loadFont("./Fonts/open-sans-28-white.fnt"),
-      jimp.loadFont("./Fonts/open-sans-60-white.fnt"),
-      jimp.loadFont("./Fonts/open-sans-92-white.fnt"),
+      jimp.read("../Images/shopBack.jpg"),
+      jimp.read("../Images/Rarities/uncommon.png"),
+      jimp.read("../Images/Rarities/rare.png"),
+      jimp.read("../Images/Rarities/epic.png"),
+      jimp.read("../Images/Rarities/legendary.png"),
+      jimp.read("../Images/backdrop.png"),
+      jimp.loadFont("../Fonts/open-sans-32-white.fnt"),
+      jimp.loadFont("../Fonts/open-sans-28-white.fnt"),
+      jimp.loadFont("../Fonts/open-sans-60-white.fnt"),
+      jimp.loadFont("../Fonts/open-sans-92-white.fnt"),
     ])
     .then(values => {
       let [, shopImage, uncommonImage, rareImage, epicImage, legendaryImage, backDrop, font32, font28, titleFont, mainTitle] = values;

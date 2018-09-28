@@ -96,7 +96,7 @@ async function createShop() {
         i++;
       });
       shopImage.quality(100)
-        .write("./Shop.jpg");
+        .write("../Shop.jpg");
       console.log(chalk.blue("Successfully created and saved shop image to ./Shop.jpg"));
     });
     }

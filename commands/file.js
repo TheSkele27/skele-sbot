@@ -97,8 +97,16 @@ async function createShop() {
         i++;
       });
       shopImage.quality(100)
+<<<<<<< HEAD
         .write("./Shop.jpg");
       console.log(chalk.blue("Successfully created and saved shop image to ./Shop.jpg"));
     });
   } setInterval(createShop, 10000)
 }
+=======
+        .write("../Shop.jpg");
+      console.log(chalk.blue("Successfully created and saved shop image to ./Shop.jpg"));
+    });
+  } setInterval(createShop, 10000)
+}
+>>>>>>> 4013e3e7e7c97959e1b81ea964aa7640b1d0f1ac

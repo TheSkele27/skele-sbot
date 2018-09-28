@@ -3,7 +3,7 @@ const jimp = require("jimp");
 const request = require('request');
 const api = require('../data/apikeys.json');
 
-
+exports.run = async (client, message, args) => {
 async function createShop() {
   Promise.all([
       rp({
@@ -99,6 +99,7 @@ async function createShop() {
         .write("./Shop.jpg");
       console.log(chalk.blue("Successfully created and saved shop image to ./Shop.jpg"));
     });
-}
-setInterval(createShop, 10000)
+    }
+    setInterval(createShop, 10000)
+  }
 }

@@ -1,9 +1,10 @@
-const rp = require('request-promise');
 const jimp = require("jimp");
+const chalk = require('chalk');
+const rp = require('request-promise');
 const request = require('request');
-const api = require('../data/apikeys.json');
+const api - require('../data/apikeys.json');
 
-exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, arges) => {
 async function createShop() {
   Promise.all([
       rp({
@@ -99,6 +100,5 @@ async function createShop() {
         .write("../Shop.jpg");
       console.log(chalk.blue("Successfully created and saved shop image to ./Shop.jpg"));
     });
-    }
     setInterval(createShop, 10000)
   }

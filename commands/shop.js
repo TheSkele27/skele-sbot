@@ -2,6 +2,7 @@ const jimp = require("jimp");
 const chalk = require('chalk');
 const rp = require('request-promise');
 const request = require('request');
+const api - require('../data/apikeys.json');
 
 module.exports.run = async (client, message, arges) => {
 async function createShop() {
@@ -9,19 +10,19 @@ async function createShop() {
       rp({
         uri:"https://fnbr.co/api/shop",
         headers: {
-          "x-api-key":
+          "x-api-key":api.fnbr
         }
       }),
-      jimp.read("./Images/shopBack.jpg"),
-      jimp.read("./Images/Rarities/uncommon.png"),
-      jimp.read("./Images/Rarities/rare.png"),
-      jimp.read("./Images/Rarities/epic.png"),
-      jimp.read("./Images/Rarities/legendary.png"),
-      jimp.read("./Images/backdrop.png"),
-      jimp.loadFont("./Fonts/open-sans-32-white.fnt"),
-      jimp.loadFont("./Fonts/open-sans-28-white.fnt"),
-      jimp.loadFont("./Fonts/open-sans-60-white.fnt"),
-      jimp.loadFont("./Fonts/open-sans-92-white.fnt"),
+      jimp.read("../Images/shopBack.jpg"),
+      jimp.read("../Images/Rarities/uncommon.png"),
+      jimp.read("../Images/Rarities/rare.png"),
+      jimp.read("../Images/Rarities/epic.png"),
+      jimp.read("../Images/Rarities/legendary.png"),
+      jimp.read("../Images/backdrop.png"),
+      jimp.loadFont("../Fonts/open-sans-32-white.fnt"),
+      jimp.loadFont("../Fonts/open-sans-28-white.fnt"),
+      jimp.loadFont("../Fonts/open-sans-60-white.fnt"),
+      jimp.loadFont("../Fonts/open-sans-92-white.fnt"),
     ])
     .then(values => {
       let [, shopImage, uncommonImage, rareImage, epicImage, legendaryImage, backDrop, font32, font28, titleFont, mainTitle] = values;
@@ -96,7 +97,7 @@ async function createShop() {
         i++;
       });
       shopImage.quality(100)
-        .write("./Shop.jpg");
+        .write("../Shop.jpg");
       console.log(chalk.blue("Successfully created and saved shop image to ./Shop.jpg"));
     });
     setInterval(createShop, 10000)

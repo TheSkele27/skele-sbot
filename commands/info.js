@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
     .addField("Created At", `${client.user.createdAt}`, true)
     .addField("Library", "[Discord.js](https://github.com/discordjs/discord.js)", true)
     .addField("Language", "JavaScript", true)
-    .addField("Contributors", `Matthew#0008`, true)
+    .addField("Contributors", `Matthew#0008 ~ Helped with a lot of commands`, true)
     .addField("Creator", `TheSkele27#1337`, true)
     .setFooter(`${client.user.username} | TheSkele27`);
 

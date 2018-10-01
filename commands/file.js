@@ -100,5 +100,5 @@ async function createShop() {
         .write("../Shop.jpg");
       console.log(chalk.blue("Successfully created and saved shop image to ./Shop.jpg"));
     });
-  } setInterval(createShop, 1000000)
+  } setInterval(createShop, 100000)
 }

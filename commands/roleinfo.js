@@ -34,3 +34,4 @@ exports.run = async (client, message, args) => {
     const norole = 'This role was not found.';
     msg.edit(norole);
   }
+}

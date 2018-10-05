@@ -1,3 +1,6 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/theskele27/skele-sbot/badge)](https://www.codefactor.io/repository/github/theskele27/skele-sbot)
+
+
 **What is Sunbeam?** Sunbeam is a bot that is currently in development, and will soon be a multifunction Discord bot for anyone to use.
 
 **Who made Sunbeam?** Sunbeam is currently made by the TheSkele27 and other contributors.

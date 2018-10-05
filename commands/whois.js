@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const moment = require("moment");
-const moment123 = moment().add(10, 'days').calendar(); 
 const status = {
   online: "Online",
   idle: "Idle",

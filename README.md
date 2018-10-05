@@ -7,8 +7,7 @@
 
 **Who made Sunbeam?** Sunbeam is currently made by the TheSkele27 and other contributors.
 
-**Where is the Discord server at?** Join our Discord server here: We dont have one yet however my discord name is TheSkele27#1337
-
+**Where is the Discord server at?** Join our Discord server here: https://discord.gg/9myPTwq
 **How can I help or contribute?** You can make pull requests or feature requests. Anything is appreciated!
 
 **How can I install the bot myself?** Wiki coming soon.

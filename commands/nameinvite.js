@@ -1,5 +1,3 @@
-const Discord = require("discord.js")
-
 module.exports.run = (client, message, guild, msg) => {
     const members = message.guild.members.filter(member => member.user.username && /(discord\.(gg|io|me|li)\/.+|discordapp\.com\/invite\/.+)/i.test(member.user.username));
   return message.channel.send(members.map(member => `\`${member.id}\` ${member.displayName}`).join("\n") || "No one in this server has a Discord invite as their user name.");

@@ -1,5 +1,3 @@
-const Discord = require("discord.js");
-
 exports.run = async (client, message, args) => {
     /* if(!message.member.roles.some(r=>["Admin", "Mod", "BotAdmin", "Manager", "Council"].includes(r.name)) ) */
     if(!message.member.hasPermission("MANAGE_MESSAGES")) 

@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const moment = require("moment");
 const status = {
   online: "Online",
   idle: "Idle",

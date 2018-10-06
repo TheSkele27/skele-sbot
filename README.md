@@ -10,4 +10,4 @@
 **Where is the Discord server at?** Join our Discord server here: https://discord.gg/9myPTwq
 **How can I help or contribute?** You can make pull requests or feature requests. Anything is appreciated!
 
-**How can I install the bot myself?** Wiki coming soon
+**How can I install the bot myself?** Wiki coming soon.

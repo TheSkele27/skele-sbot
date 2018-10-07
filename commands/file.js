@@ -1,8 +1,6 @@
 const jimp = require("jimp");
 const chalk = require('chalk');
 const rp = require('request-promise');
-const request = require('request');
-const api = require('../data/apikeys.json');
 
 module.exports.run = async (client, message, arges) => {
 async function createShop() {

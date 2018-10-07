@@ -1,6 +1,7 @@
 const axios = require("axios")
 
 module.exports.run = (client, message, args) => {
+    if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.reply("Sorry, I can't do that.");
     function slowmode(s, m){
     axios({
         method: 'patch',

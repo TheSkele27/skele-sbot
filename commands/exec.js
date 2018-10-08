@@ -1,7 +1,7 @@
 const { exec } = require('child_process');
 
 exports.run = async (client, msg, args) => {
-  if(!message.author.id === client.config.ownerID) return;
+  if(message.author.id !== client.config.ownerID) return;
   const command = args.join(' ');
   const outMessage = await msg.channel.send(`Running \`${command}\`...`);
   let stdOut = await doExec(command).catch(data=> outputErr(outMessage, data));

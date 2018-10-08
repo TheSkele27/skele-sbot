@@ -1,4 +1,4 @@
-onst { exec } = require('child_process');
+const { exec } = require('child_process');
 
 exports.run = async (client, msg, args) => {
   if(message.author.id !== client.config.ownerID) return;

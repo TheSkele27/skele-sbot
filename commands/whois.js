@@ -17,7 +17,7 @@ for(let i = 0; i < skele.length; i++) {
       rolesList += ", ";
 }
  
-rolesList;
+
     const embed = new Discord.RichEmbed()
     .setAuthor(botuser.displayName, botuser.user.avatarURL)
     .setColor(botuser.displayColor)

@@ -1,4 +1,4 @@
-const schedule = require('node-schedule');
+/* const schedule = require('node-schedule');
 
 var rule = new schedule.RecurrenceRule();
 
@@ -18,3 +18,4 @@ module.exports.run = async (client, message, args) => {
     })
   });
 }
+ */

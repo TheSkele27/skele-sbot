@@ -1,6 +1,6 @@
 exports.run = async (client, message, args) => {
-    if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply("Sorry, you don't have permission to do that.");
-    return message.reply("Sorry, you don't have permissions to use this!");
+
+  if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply("Sorry, you don't have permission to do that.");
   
   let member = message.mentions.members.first();
   if(!member)

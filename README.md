@@ -1,5 +1,3 @@
-<iframe src="https://canary.discordapp.com/widget?id=493112905328230401&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c8c9a440a43d43af8ac53f73b85fbb08)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TheSkele27/skele-sbot&amp;utm_campaign=Badge_Grade)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/TheSkele27/skele-sbot.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/TheSkele27/skele-sbot/context:javascript)
 [![CodeFactor](https://www.codefactor.io/repository/github/theskele27/skele-sbot/badge)](https://www.codefactor.io/repository/github/theskele27/skele-sbot)

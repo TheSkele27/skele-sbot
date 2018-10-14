@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
     .addField("Language", "JavaScript", true)
     .addField("Contributors", `Matthew#0008 ~ Helped with a lot of commands`, true)
     .addField("Creator", `TheSkele27#1337`, true)
-    .addField("Our [Website](http://www.theskele27.me)")
+    .addField("Website", "[Sunbeam](http://www.theskele27.me)", true)
     .setFooter(`${client.user.username} | TheSkele27`);
 
 

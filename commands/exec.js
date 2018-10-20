@@ -1,9 +1,9 @@
-const exec = require('child_process');
+const { exec } = require('child_process');
 
-exports.run = async (client, message, msg, args) => {
-  const command2 = args.join(" ");
-  const outMessage = await msg.channel.send(`Running \`${command2}\`...`);
-  let stdOut = await doExec(command2).catch(data=> outputErr(outMessage, data));
+exports.run = async (client, msg, args) => {
+  const command = args.join(' ');
+  const outMessage = await msg.channel.send(`Running \`${command}\`...`);
+  let stdOut = await doExec(command).catch(data=> outputErr(outMessage, data));
   stdOut = stdOut.substring(0, 1750);
   outMessage.edit(`\`OUTPUT\`
 \`\`\`sh

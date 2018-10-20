@@ -11,6 +11,8 @@ ${stdOut}
 \`\`\``);
 };
 
+if(message.author.id !== `213632190557192192`) return;
+
 const outputErr = (msg, stdData) => {
   const { stdout, stderr } = stdData;
   const message = stdout.concat(`\`\`\`${stderr}\`\`\``);

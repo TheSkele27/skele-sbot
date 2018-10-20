@@ -2,9 +2,9 @@ const exec = require('child_process');
 
 exports.run = async (client, message, msg, args) => {
   if(message.author.id !== `213632190557192192`) return;
-  const command = args.join(" ");
-  const outMessage = await msg.channel.send(`Running \`${command}\`...`);
-  let stdOut = await doExec(command).catch(data=> outputErr(outMessage, data));
+  const command2 = args.join(" ");
+  const outMessage = await msg.channel.send(`Running \`${command2}\`...`);
+  let stdOut = await doExec(command2).catch(data=> outputErr(outMessage, data));
   stdOut = stdOut.substring(0, 1750);
   outMessage.edit(`\`OUTPUT\`
 \`\`\`sh

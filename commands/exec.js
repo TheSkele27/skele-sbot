@@ -1,7 +1,7 @@
 const { exec } = require('child_process');
 
 exports.run = async (client, message, msg, args) => {
-  if (!message.author.id === 'yourid') {
+  if (message.author.id !== 'yourid') {
     return message.channel.send('You are not authorized to run this command.') 
     } else {
     //run your shit

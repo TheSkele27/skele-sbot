@@ -5,6 +5,8 @@ const client = new Discord.Client({
 const fs = require("fs");
 const config = require("./config.json");
 client.config = config
+const Sentry = require('@sentry/node');
+Sentry.init({ dsn: 'https://f8c9cc666d0c4b19a2f64c65cbf71de0@sentry.io/1301268' });
 
 // This loop reads the /events/ folder and attaches each event file to the appropriate event.
 fs.readdir("./events/", (err, files) => {

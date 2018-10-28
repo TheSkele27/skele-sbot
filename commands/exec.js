@@ -1,4 +1,4 @@
-const { exec } = require('child_process');
+/*const { exec } = require('child_process');
 
 exports.run = async (client, message, msg, args) => {
   if (!message.author.id === '213632190557192192') {

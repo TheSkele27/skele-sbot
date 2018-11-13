@@ -1,7 +1,6 @@
 exports.run = async (client, message, args) => {
-    if(!message.member.roles.some(r=>["Administrator", "Moderator", "BotAdmin", "Manager", "Council", "Admin"].includes(r.name)) )
-    return message.reply("Sorry, you don't have permissions to use this!");
-  
+  if(!message.member.hasPermission("KICK_MEMBERS")) return message.reply("Sorry, you don't have permission to do that.");
+
   let member = message.mentions.members.first() || message.guild.members.get(args[0]);
   if(!member)
     return message.reply("Please mention a valid member of this server");

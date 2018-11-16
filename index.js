@@ -7,9 +7,45 @@ const config = require("./config.json");
 client.config = config
 const Sentry = require('@sentry/node');
 Sentry.init({ dsn: 'https://f8c9cc666d0c4b19a2f64c65cbf71de0@sentry.io/1301268' });
+const Enmap = require('enmap')
 
 
 require('./modules/functions.ts')(client);
+
+client.stats = new Enmap({
+  name: 'stats', 
+  autoFetch: true, 
+  fetchAll: true});
+
+client.activatedServers = new Enmap({
+  name: 'activatedServers', 
+  autofetch: true, 
+  fetchAll: true});
+
+client.credits = new Enmap({
+  name: 'credits',
+  autoFetch: true,
+  fetchAll: true
+});
+
+client.repPoints = new Enmap({
+  name: 'reputation',
+  autoFetch: true,
+  fetchAll: true
+});
+
+client.userTitle = new Enmap({
+  name: 'title',
+  autoFetch: true,
+  fetchAll: true
+});
+
+client.userBio = new Enmap({
+  name: 'bio',
+  autoFetch: true,
+  fetchAll: true
+});
+
 // This loop reads the /events/ folder and attaches each event file to the appropriate event.
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);

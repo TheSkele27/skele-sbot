@@ -5,7 +5,7 @@ module.exports.run = (client, message, args) => {
     function slowmode(s, m){
     axios({
         method: 'patch',
-        url: `https://discordapp.com/api/v6/channels/${message.channel.id}`,
+        url: `https://discordapp.com/api/v7/channels/${message.channel.id}`,
         headers: {
             "Authorization" : `Bot ${client.config.token}`
           },

@@ -8,7 +8,7 @@ async function createShop() {
       rp({
         uri:"https://fnbr.co/api/shop",
         headers: {
-          "x-api-key":"90803f80-54ea-4dd1-8a83-b428a6f53f54"
+          "x-api-key":"cf5fbc68-98da-4dce-aa6e-97ae602fdd89"
         }
       }),
       jimp.read("./Images/shopBack.jpg"),
